@@ -26,5 +26,15 @@ public class Usuario {
     @Column(name="data_nascimento")
     private LocalDate dataNascimento;
 
+    public Usuario() {
+    }
+
+    public Usuario(Integer id, String nome, String cpf, LocalDate dataNascimento) {
+        this.id = id;
+        this.nome = nome;
+        this.cpf = cpf;
+        this.dataNascimento = dataNascimento;
+    }
+
 
 }
