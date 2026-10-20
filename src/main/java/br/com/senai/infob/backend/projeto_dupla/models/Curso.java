@@ -28,4 +28,18 @@ public class Curso {
 
     @Column(name="data_termino")
     private LocalDate dataTermino;
+
+    public Curso() {
+    }
+
+    public Curso(Integer id, String nome, String descricao, LocalDate dataInicio, LocalDate dataTermino) {
+        this.id = id;
+        this.nome = nome;
+        this.descricao = descricao;
+        this.dataInicio = dataInicio;
+        this.dataTermino = dataTermino;
+    }
+
+    
 }
+
